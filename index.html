@@ -115,6 +115,7 @@
       html {
         background: var(--bg);
         scroll-behavior: smooth;
+        overflow-x: hidden;
       }
 
       body {
@@ -129,6 +130,8 @@
         background-size: auto, auto, 36px 36px, 36px 36px, auto;
         font-family: "IBM Plex Sans", "Noto Sans SC", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
         letter-spacing: 0;
+        overflow-x: hidden;
+        overscroll-behavior-y: contain;
       }
 
       body::before {
@@ -623,39 +626,207 @@
       }
 
       @media (max-width: 768px) {
+        body {
+          background:
+            radial-gradient(circle at 20% 0%, rgba(45, 212, 255, 0.14), transparent 17rem),
+            radial-gradient(circle at 90% 12%, rgba(255, 78, 205, 0.09), transparent 15rem),
+            linear-gradient(rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+            linear-gradient(180deg, #070b16 0%, #050812 58%, #03050b 100%);
+          background-attachment: scroll;
+          background-size: auto, auto, 28px 28px, 28px 28px, auto;
+        }
+
+        body::after {
+          opacity: 0.22;
+        }
+
+        .boot-screen {
+          min-height: 100svh;
+          padding: 24px;
+        }
+
+        .boot-screen strong {
+          font-size: 16px;
+        }
+
         .sidebar {
-          width: min(86vw, 318px);
+          width: min(88vw, 320px);
+          max-width: 320px;
+          box-shadow: 18px 0 54px rgba(0, 0, 0, 0.46);
+        }
+
+        .sidebar .app-name {
+          margin: 18px 0 10px;
+        }
+
+        .app-name-link img {
+          max-width: 92px;
+        }
+
+        .sidebar-nav {
+          padding-right: 6px;
+        }
+
+        .sidebar ul li a {
+          min-height: 38px;
+          display: flex;
+          align-items: center;
+          margin-right: 4px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          font-size: 14px;
+          line-height: 1.35;
+        }
+
+        .search {
+          padding: 12px;
+        }
+
+        .search input {
+          min-height: 44px;
+          font-size: 13px;
         }
 
         .content {
           left: 0;
+          right: 0;
+          width: 100%;
+          max-width: 100vw;
         }
 
         .markdown-section {
-          padding: 34px 20px 58px;
+          width: 100%;
+          max-width: 100vw;
+          padding: 30px 16px 58px;
+          line-height: 1.68;
+          overflow-wrap: anywhere;
+          word-break: normal;
         }
 
         .markdown-section::before {
           max-width: 100%;
           white-space: normal;
+          margin-bottom: 14px;
+          padding: 5px 8px;
+          font-size: 10px;
+          letter-spacing: 0.09em;
         }
 
         .markdown-section h1 {
-          font-size: 30px;
+          display: block;
+          max-width: 100%;
+          margin-bottom: 18px;
+          font-size: 28px;
+          line-height: 1.2;
+          overflow-wrap: anywhere;
+        }
+
+        .markdown-section h1::after {
+          width: 100%;
+          height: 2px;
+          margin-top: 12px;
         }
 
         .markdown-section h2 {
-          font-size: 22px;
-          padding: 14px 15px;
+          margin-top: 38px;
+          padding: 12px 12px;
+          font-size: 20px;
+          line-height: 1.35;
         }
 
         .markdown-section h2::after {
           display: none;
         }
 
+        .markdown-section h3 {
+          font-size: 17px;
+        }
+
+        .markdown-section > p:first-of-type {
+          font-size: 16px;
+        }
+
+        .markdown-section ul {
+          padding-left: 0.95rem;
+        }
+
+        .markdown-section li {
+          line-height: 1.62;
+        }
+
         .markdown-section h2 + ul > li,
         .markdown-section h2 + p + ul > li {
-          padding: 9px 10px;
+          margin: 8px 0;
+          padding: 10px 10px;
+          border-left-width: 2px;
+          transform: none;
+        }
+
+        .markdown-section h2 + ul > li:hover,
+        .markdown-section h2 + p + ul > li:hover {
+          transform: none;
+        }
+
+        .markdown-section a {
+          overflow-wrap: anywhere;
+        }
+
+        .markdown-section blockquote {
+          margin: 20px 0;
+          padding: 13px 14px;
+        }
+
+        .markdown-section table {
+          display: block;
+          max-width: 100%;
+          overflow-x: auto;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .markdown-section pre {
+          max-width: 100%;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .markdown-section code {
+          word-break: break-word;
+        }
+
+        .sidebar-toggle {
+          min-width: 48px;
+          min-height: 48px;
+          left: 14px;
+          bottom: calc(14px + env(safe-area-inset-bottom));
+          display: grid;
+          place-content: center;
+        }
+
+        .github-corner {
+          display: none;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .markdown-section {
+          padding-left: 14px;
+          padding-right: 14px;
+        }
+
+        .markdown-section h1 {
+          font-size: 26px;
+        }
+
+        .markdown-section h2 {
+          font-size: 19px;
+        }
+
+        .markdown-section h2 + ul > li,
+        .markdown-section h2 + p + ul > li {
+          margin-left: -2px;
+          margin-right: -2px;
         }
       }
 
