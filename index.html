@@ -85,6 +85,78 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js" type="text/javascript"></script>
 
+    <script>
+      (function () {
+        function getAnchorId(href) {
+          if (!href) return "";
+          var id = "";
+          var idIndex = href.indexOf("?id=");
+
+          if (idIndex >= 0) {
+            id = href.slice(idIndex + 4);
+          } else if (href.charAt(0) === "#") {
+            id = href.slice(1);
+          }
+
+          if (!id) return "";
+          id = id.split("&")[0].split("?")[0];
+
+          try {
+            return decodeURIComponent(id);
+          } catch (error) {
+            return id;
+          }
+        }
+
+        function findAnchor(id) {
+          if (!id) return null;
+          var target = document.getElementById(id);
+          if (target) return target;
+
+          if (window.CSS && CSS.escape) {
+            return document.querySelector("[name='" + CSS.escape(id) + "']");
+          }
+
+          return null;
+        }
+
+        function scrollToAnchor(id, updateHash) {
+          var target = findAnchor(id);
+          if (!target) return false;
+
+          target.scrollIntoView({ block: "start", behavior: "smooth" });
+
+          if (updateHash) {
+            var route = location.hash.indexOf("#/") === 0 ? location.hash.split("?id=")[0] : "#/";
+            history.replaceState(null, "", location.pathname + location.search + route + "?id=" + encodeURIComponent(id));
+          }
+
+          return true;
+        }
+
+        document.addEventListener("click", function (event) {
+          var link = event.target.closest(".markdown-section a[href^='#'], .sidebar a[href*='?id='], .sidebar a[href^='#']");
+          if (!link) return;
+
+          var id = getAnchorId(link.getAttribute("href"));
+          if (!id) return;
+
+          if (scrollToAnchor(id, true)) {
+            event.preventDefault();
+          }
+        });
+
+        window.addEventListener("hashchange", function () {
+          var id = getAnchorId(location.hash);
+          if (id) {
+            setTimeout(function () {
+              scrollToAnchor(id, false);
+            }, 40);
+          }
+        });
+      })();
+    </script>
+
     <style>
       :root {
         --theme-color: #28f7a1;

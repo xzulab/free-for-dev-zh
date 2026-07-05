@@ -14,6 +14,7 @@
 
 **注意**：此列表仅适用于即服务产品，不适用于自托管软件。为了符合资格，服务必须提供免费套餐，而不仅仅是免费试用。如果有时间限制，免费套餐必须至少持续一年。我们还从安全角度考虑免费套餐，因此 SSO 很好，但我不会接受将 TLS 限制为仅限付费层的服务。
 
+<a id="table-of-contents"></a>
 # 目录
 
   * [主要云服务商的永久免费额度](#major-cloud-providers)
@@ -196,7 +197,7 @@
     * [Surveys](https://zoho.com/surveys) - 在线调查
      * [Bookings](https://zoho.com/bookings) - 预约安排
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="cloud-management-solutions"></a>
 ## 云管理解决方案
@@ -207,7 +208,7 @@
   * [Pulumi](https://www.pulumi.com/) - 现代基础设施即代码平台，允许您使用熟悉的编程语言和工具来构建、部署和管理云基础设施。
   * [scalr.com](https://scalr.com/) - Scalr 是一款 Terraform 自动化和协作 (TACO) 产品，用于在 Terraform 管理的基础设施和配置上更好地协作和自动化。完整的 Terraform CLI 支持、OPA 集成和分层配置模型。没有 SSO 税。所有功能均包含在内。/月最多免费运行 50 次。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="source-code-repos"></a>
 ## 源代码仓库
@@ -225,7 +226,7 @@
   * [savannah.gnu.org](https://savannah.gnu.org/) - 用作免费软件项目(针对 GNU 项目)的协作软件开发管理系统
   * [savannah.nongnu.org](https://savannah.nongnu.org/) - 用作免费软件项目(针对非 GNU 项目)的协作软件开发管理系统
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="apis-data-and-ml"></a>
 ## API、数据和机器学习
@@ -372,7 +373,7 @@
   * [Zuplo](https://zuplo.com/) - 免费的 API 管理平台，用于设计、构建 API 并将其部署到边缘。在几分钟内将 API 密钥身份验证、速率限制、开发人员文档和货币化添加到任何 API。 OpenAPI 原生且完全可编程，可使用 Web 标准 api 和 Typescript。免费计划提供最多 10 个项目、无限的生产边缘环境、/月 100 万个请求和 10GB 出口。
   * [Metashot](https://metashot.io)— Open Graph (OG) 社交预览图像生成 API。通过 URL 参数为 Twitter、LinkedIn 和 Facebook 生成动态 1200×630 图像，并在 Cloudflare Workers 上进行边缘缓存。免费套餐：/月 1,000 次渲染。付费计划 12 美元/月起。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="artifact-repos"></a>
 ## 制品仓库
@@ -384,7 +385,7 @@
   * [RepoForge](https://repoforge.io) - 用于 Python、Debian、NPM 包和 Docker 注册表的私有云托管存储库。开源/公共项目的免费计划。
   * [repsy.io](https://repsy.io) - 1 GB 免费的私有/公共 Maven 存储库。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="tools-for-teams-and-collaboration"></a>
 ## 团队和协作工具
@@ -466,7 +467,7 @@
   * [Zulip](https://zulip.com/) - 通过独特的类似电子邮件的线程模型进行实时聊天。免费计划包括 10,000 条搜索历史消息和高达 5 GB 的文件存储空间。此外，它还提供了一个可自托管的开源版本。
   * [RightFeature](https://rightfeature.com/) - 轻松收集客户的反馈，将客户反馈转化为您的产品路线图。收集、优先考虑并交付对用户真正重要的功能。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 ## CMS
 
@@ -483,7 +484,7 @@
   * [TinaCMS](https://tina.io/) - 取代 Forestry.io。支持 Markdown、MDX 和 JSON 的开源 Git 支持的无头 CMS。基本优惠是免费的，有两个用户可用。
   * [WPJack](https://wpjack.com) - 不到 5 分钟即可在任何云上设置 WordPress！免费套餐包括 1 台服务器、2 个站点、免费 SSL 证书和无限的 cron 作业。没有时间限制或过期 - 您的网站，您做主。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="code-generation"></a>
 ## 代码生成
@@ -495,7 +496,7 @@
 * [Supermaven](https://www.supermaven.com/) - 适用于 VS Code、JetBrains 和 Neovim 的高速 AI 代码补全插件。免费套餐提供无限的内联完成，重点是超低延迟。
 * [v0.dev](https://v0.dev/) - v0 由 Vercel 创建，使用 shadcn/ui 和 Tailwind CSS 生成复制粘贴友好的 React 代码。它采用积分系统，/月提供 1,200 个起始积分和 200 个免费积分。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="code-quality"></a>
 ## 代码质量
@@ -524,7 +525,7 @@
   * [shields.io](https://shields.io) - 开源项目的质量元数据徽章
   * [sonarcloud.io](https://sonarcloud.io) - 针对 Java、JavaScript、C/C++、C#、VB.NET、PHP、Objective-C、Swift、Python、Groovy 以及更多语言的自动源代码分析，免费开源
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="code-search-and-browsing"></a>
 ## 代码搜索和浏览
@@ -534,7 +535,7 @@
   * [Namae](https://namae.dev/) - 搜索各种网站(例如 GitHub、Gitlab、Heroku、Netlify 等)以获取您的项目名称的可用性。
   * [tickgit.com](https://www.tickgit.com/) - 显示`TODO`注释(和其他标记)以识别值得返回以进行改进的代码区域。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="ci-and-cd"></a>
 ## CI/CD
@@ -561,7 +562,7 @@
   * [Terramate](https://terramate.io/) - Terramate 是一个用于基础设施即代码 (IaC) 工具(例如 Terraform、OpenTofu 和 Terragrunt)的编排和管理平台。最多可释放 2 位用户，包括所有功能。
   * [Terrateam](https://terrateam.io) - GitOps 首创的 Terraform 自动化，具有Pull Request驱动的工作流程、通过自托管运行程序进行项目隔离以及有序操作的分层运行。最多 3 位用户免费。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="testing"></a>
 ## 测试
@@ -600,7 +601,7 @@
   * [websitepulse.com](https://www.websitepulse.com/tools/) - 各种免费的网络和服务器工具。
   * [kogiQA](https://kogiqa.com) - 一种 Web UI 自动化工具，无需选择器即可运行。每个开发者/月可以免费获得 500 次操作。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="security-and-pki"></a>
 ## 安全和 PKI
@@ -642,7 +643,7 @@
   * [TestTLS.com](https://testtls.com) - 测试 SSL/TLS 服务的安全服务器配置、证书、链等。不限于 HTTPS。
   * [Virgil Security](https://virgilsecurity.com/) - 用于在数字解决方案中实施端到端加密、数据库保护、物联网安全等的工具和服务。对于最多 250 个用户的应用程序免费。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="authentication-authorization-and-user-management"></a>
 ## 认证、授权和用户管理
@@ -676,7 +677,7 @@
   * [ZITADEL Cloud](https://zitadel.com) - 适合您并支持多租户 (B2B) 使用案例的交钥匙用户和访问管理。免费最多可处理 25,000 个经过身份验证的请求，并具有所有安全功能(OTP、无密码、策略等无需付费)。
 
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="mobile-app-distribution-and-feedback"></a>
 ## 移动应用分发和反馈
@@ -687,7 +688,7 @@
   * [InstallOnAir](https://www.installonair.com) - 通过无线方式分发 iOS 和 Android 应用程序。免费计划：无限制上传、私人链接、访客有效期为 2 天、注册用户有效期为 60 天。
   * [Loadly](https://loadly.io) - iOS和Android测试版应用程序分发服务提供完全免费的服务，无限下载、高速下载和无限上传。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="management-system"></a>
 ## 管理系统
@@ -701,7 +702,7 @@
   * [serveravatar.com](https://serveravatar.com) - 通过自动化配置管理和监控基于 PHP 的 Web 服务器。 Free for one server.
   * [xcloud.host](https://xcloud.host) - 服务器管理和部署平台，具有用户友好的界面。一台服务器可享受免费套餐。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="messaging-and-streaming"></a>
 ## 消息和流处理
@@ -727,7 +728,7 @@
   * [webpushr](https://www.webpushr.com/) - 网络推送通知 - 最多 10k 订阅者免费、无限制的推送通知、浏览器内消息传递
   * [vask](https://vask.dev) - 实时消息服务，兼容 Pusher。开发层仅限于本地开发，并且免费，具有 100 个并发连接、/月 1,000,000 次广播、无限制的客户端事件、32kb 消息大小。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="log-management"></a>
 ## 日志管理
@@ -741,7 +742,7 @@
   * [openobserve.ai](https://openobserve.ai/) - /月免费获取 200 GB，保留 15 天
   * [Smart Grow Logs](https://logs.smart-grow.app/) - 具有端到端加密、实时警报和多平台 SDK 的集中式日志管理平台。免费套餐/天最多包含 3.000 个日志。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="translation-management"></a>
 ## 翻译管理
@@ -762,7 +763,7 @@
   * [Tolgee](https://tolgee.io) - 免费 SaaS 产品，翻译有限，永久免费的自托管版本
   * [transifex.com](https://www.transifex.com/) - Free for Open Source
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="monitoring"></a>
 ## 监控
@@ -820,7 +821,7 @@
   * [Xitoring.com](https://xitoring.com/) - 正常运行时间监控：20 个免费，Linux 和 Windows Server 监控：5 个免费，状态页面：1 个免费 - 移动应用程序、多个通知渠道等等！
   * [UptimeRobot](https://uptimerobot.com/) - 业余爱好项目的免费正常运行时间监控。包括 50 个监视器，检查间隔为 5 分钟，支持 HTTP、ping、端口和关键字监控。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="crash-and-exception-handling"></a>
 ## 崩溃和异常处理
@@ -841,7 +842,7 @@
   * [sentry.io](https://sentry.io/) - Sentry 实时跟踪应用程序异常，并有一个小型免费计划。/月 5000 个错误/1 个用户免费，如果自托管则不受限制使用
   * [Whitespace](https://whitespace.dev) - 直接在浏览器中一键生成错误报告。个人使用的免费计划提供无限录制。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="search"></a>
 ## 搜索
@@ -851,7 +852,7 @@
   * [CommandBar](https://www.commandbar.com/) - 统一搜索栏即服务、基于 Web 的 UI 小部件/插件，允许您的用户在您的产品中搜索内容、导航、功能等，这有助于发现。最多 1,000 名/月活跃用户免费，命令无限制。
   * [searchly.com](http://www.searchly.com/) - 免费 2 个索引和 20 MB 存储
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="education-and-career-development"></a>
 ## 教育和职业发展
@@ -875,7 +876,7 @@
   * [The Odin Project](https://www.theodinproject.com/) - 免费的开源平台，其课程重点关注用于 Web 开发的 JavaScript 和 Ruby。
   * [W3Schools](https://www.w3schools.com/) - 提供有关 HTML、CSS、JavaScript 等 Web 开发技术的免费教程。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="email"></a>
 ## 电子邮件
@@ -945,7 +946,7 @@
   * [Waitlio](https://waitlio.com/) - 用于产品发布的等候名单管理软件。创建品牌等候名单页面，收集和验证电子邮件订阅者，使用标签和分析管理注册。免费计划包括 100 个订阅者/月、1 个候补名单和 API 访问权限。
   * [Wraps](https://wraps.dev) - 电子邮件自动化工作流程、5000 个跟踪事件和无限的免费联系人。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="feature-toggles-management-platforms"></a>
 ## 功能开关管理平台
@@ -960,7 +961,7 @@
   * [Toggled.dev](https://www.toggled.dev) - 企业就绪、可扩展的多区域功能切换管理平台。免费计划最多 10 个标志、两个环境、无限请求。 SDK、分析仪表板、发布日历、Slack 通知和所有其他功能都包含在无限免费计划中。
 
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="font"></a>
 ## 字体
@@ -977,7 +978,7 @@
   * [Fontshare](https://www.fontshare.com/) - 是一项免费字体服务。这是一个不断增长的专业级字体集合，100% 免费供个人和商业使用。
   * [Google Fonts](https://fonts.google.com/) - 通过下载或 Google CDN 的链接，可以轻松快速地在网站上安装许多免费字体。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="forms"></a>
 ## 表单
@@ -1014,7 +1015,7 @@
   * [Wufoo](https://www.wufoo.com/) - 在网站上使用的快速表单。免费计划/月提交的数量上限为 100 份。
   * [FormNX](https://FormNX.com/) - 创建无限量的表单，免费获得无限量的提交。使用专业创建的 1000 多个表单模板或从头开始创建表单。获取电子邮件通知、表单逻辑、收款、文件上传、自定义感谢页面等功能。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="generative-ai"></a>
 ## 生成式 AI
@@ -1039,7 +1040,7 @@
   * [ReportGPT](https://ReportGPT.app) - 人工智能驱动的写作助手。只要您携带自己的API密钥，整个平台都是免费的。
   * [Zenable](https://zenable.io) - 使用通过策略即代码构建的护栏，立即自动修复 Cursor、Windsurf 和 Copilot 等工具的输出，以满足公司的质量和合规性标准。免费套餐包括/天对 MCP 服务器的 100 次工具调用以及/天通过 GitHub 应用程序进行的 25 次免费自动Pull Request审查。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="cdn-and-protection"></a>
 ## CDN 和防护
@@ -1063,7 +1064,7 @@
   * [UNPKG](https://unpkg.com/) - npm 上所有内容的 CDN
   * [weserv](https://images.weserv.nl/) - 图像缓存和调整大小服务。使用全球缓存动态处理图像。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 ## PaaS
 
@@ -1087,7 +1088,7 @@
   * [WunderGraph](https://cloud.wundergraph.com) - 一个开源平台，可让您快速构建、发布和管理现代 API。内置 CI/CD、GitHub 集成和自动 HTTPS。[free plan](https://wundergraph.com/pricing)上最多 3 个项目、1GB 出口、/月 300 分钟的构建时间
   * [YepCode](https://yepcode.io) - 用于在无服务器环境中连接 API 和服务的一体化平台。它不仅具有 NoCode 工具的所有敏捷性和优势，而且还具有使用编程语言的所有功能。免费套餐包括[1.000 yeps](https://yepcode.io/pricing/)。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 ## BaaS
 
@@ -1115,7 +1116,7 @@
 更新时间、五个活动自动化、网络钩子。
 
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="low-code-platform"></a>
 ## 低代码平台
@@ -1131,7 +1132,7 @@
   * [ToolJet](https://www.tooljet.com/) - 用于构建业务应用程序的可扩展低代码框架。连接到数据库、云存储、GraphQL、API 端点、Airtable 等，并使用拖放应用程序生成器构建应用程序。
   * [UI Bakery](https://uibakery.io) - 低代码平台，可以更快地构建自定义 Web 应用程序。支持使用拖放功能构建 UI，并通过 JavaScript、Python 和 SQL 进行高级定制。可作为云和自托管解决方案使用。最多 5 个用户免费。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="web-hosting"></a>
 ## Web 托管
@@ -1160,7 +1161,7 @@
   * [Vercel](https://vercel.com/) - 每次`git push`时，使用免费的 SSL、全球 CDN 和独特的预览 URL 构建、部署和托管 Web 应用程序。非常适合 Next.js 和其他静态站点生成器。
   * [Versoly](https://versoly.com/) - 以 SaaS 为中心的网站构建器 - 无限的网站、70 多个块、五个模板、自定义 CSS、favicon、SEO 和表单。没有自定义域。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 ## DNS
 
@@ -1187,7 +1188,7 @@
   * [zoneedit.com](https://www.zoneedit.com/free-dns/) - 具有动态 DNS 支持的免费 DNS 托管。
   * [Zonomi](https://zonomi.com/) - 免费 DNS 托管服务，具有即时 DNS 传播功能。免费计划：1 个 DNS 区域(域名)，最多 10 条 DNS 记录。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="domain"></a>
 ## 域名
@@ -1196,7 +1197,7 @@
   * [isroot.in](https://isroot.in) - 免费 isroot.in 子域。
   * [pp.ua](https://nic.ua/) - 免费 pp.ua 子域。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 ## IaaS
 
@@ -1205,7 +1206,7 @@
   * [filebase.com](https://filebase.com/) - 由区块链支持的 S3 兼容对象存储。 5 GB 无限期免费存储空间。
   * [Modal](https://modal.com) - 人工智能驱动的 IaaS，具有大量的计算、存储能力；提供 30 美元(某些帐户可能限制为 5 美元)的/月免费积分
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="managed-data-services"></a>
 ## 托管数据服务
@@ -1235,7 +1236,7 @@
   * [Turso by ChiselStrike](https://turso.tech/) - Turso 是边缘数据库中的 SQLite 开发人员体验。 Turso 提供永久免费入门计划、9 GB 总存储空间、最多 500 个数据库、最多 3 个位置、/月 10 亿行读取以及 SQLite 本地开发支持。
   * [Upstash](https://upstash.com/) - 无服务器 Redis，免费套餐/月最多 500K 命令、最大数据库大小 256MB 和 20 个并发连接
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="tunneling-webrtc-web-socket-servers-and-other-routers"></a>
 ## 隧道、WebRTC、WebSocket 服务器和其他路由器
@@ -1261,7 +1262,7 @@
   * [Xirsys](https://www.xirsys.com/pricing/) - 无限制 STUN 使用 + /月 500 MB TURN 带宽、带宽上限、单一地理区域。
   * [ZeroTier](https://www.zerotier.com) - 自由和开源软件管理的虚拟以太网即服务。免费计划中包含 25 个客户端的无限端对端加密网络。桌面/移动/北美客户端；用于配置自定义路由规则和批准专用网络上的新客户端节点的 Web 界面
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="issue-tracking-and-project-management"></a>
 ## 问题跟踪和项目管理
@@ -1325,7 +1326,7 @@
   * [zenkit.com](https://zenkit.com) - 项目管理和协作工具。最多 5 名成员免费，附件 5 GB。
   * [Zube](https://zube.io) - 项目管理，提供 4 个项目和 4 个用户的免费计划。 GitHub 集成可用。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="storage-and-media-processing"></a>
 ## 存储和媒体处理
@@ -1379,7 +1380,7 @@
   * [uploadcare.com](https://uploadcare.com/hub/developers/) - Uploadcare 为媒体管道提供基于尖端算法的终极工具包。所有功能均完全免费供开发人员使用：文件上传 API 和 UI、图像 CDN 和源服务、自适应交付和智能压缩。免费套餐具有 3000 次上传、3 GB 流量和 3 GB 存储空间。
   * [VaocherApp QR Code Generator](https://www.vaocherapp.com/qr-code-generator) - 轻松创建礼品卡、礼券和促销活动的自定义二维码。支持自定义样式、颜色、标志...
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="design-and-ui"></a>
 ## 设计和 UI
@@ -1414,7 +1415,7 @@
   * [Themeselection](https://themeselection.com/) - 精选高品质、现代设计、专业且易于使用的免费管理仪表板模板，
   * [AdminMart](https://adminmart.com/) - 使用 Angular、Bootstrap、React、VueJs、NextJS 和 NuxtJS 创建的高质量免费和高级管理仪表板和网站模板！
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="data-visualization-on-maps"></a>
 ## 地图数据可视化
@@ -1441,7 +1442,7 @@
   * [positionstack](https://positionstack.com/) - 全球地点和坐标的免费地理编码。/月 25,000 个请求供个人使用。
   * [stadiamaps.com](https://stadiamaps.com/) - 地图图块、路线、导航和其他地理空间 API。/天 2500 个免费地图视图和 API 请求，用于非商业使用和测试。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="package-build-system"></a>
 ## 包构建系统
@@ -1450,7 +1451,7 @@
   * [copr.fedorainfracloud.org](https://copr.fedorainfracloud.org) - 针对 Fedora 和 EL 的基于模拟的 RPM 构建服务。
   * [help.launchpad.net](https://help.launchpad.net/Packaging) - Ubuntu 和 Debian 构建服务。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="ide-and-code-editing"></a>
 ## IDE 和代码编辑
@@ -1497,7 +1498,7 @@
   * [wakatime.com](https://wakatime.com/) - 使用文本编辑器插件对您的编码活动进行量化的自我衡量，有限的免费计划。
   * [Wave Terminal](https://waveterm.dev/) - Wave 是一个开源、跨平台的终端，可实现无缝工作流程。内联渲染任何内容。保存会话和历史记录。由开放网络标准提供支持。 MacOS 和 Linux。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="analytics-events-and-statistics"></a>
 ## 分析、事件和统计
@@ -1537,7 +1538,7 @@
   * [Umami](https://umami.is/) - 简单、快速、注重隐私、开源的 Google Analytics 替代方案。
   * [usabilityhub.com](https://usabilityhub.com/) - 在真人身上测试设计和模型并跟踪访客。一位用户免费，无限次测试
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="visitor-session-recording"></a>
 ## 访客会话录制
@@ -1553,7 +1554,7 @@
   * [smartlook.com](https://www.smartlook.com/) - 适用于网络和移动应用程序的免费软件包(1500 个会话/月)、三张热图、一个漏斗、1 个月的数据历史记录
   * [UXtweak.com](https://www.uxtweak.com/) - 记录并观察访问者如何使用您的网站或应用程序。小型项目免费无限时间
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="international-mobile-number-verification-api-and-sdk"></a>
 ## 国际手机号验证 API 和 SDK
@@ -1561,7 +1562,7 @@
   * [numverify](https://numverify.com/) - 全球电话号码验证和查找 JSON API。/月 100 个 API 请求
   * [veriphone](https://veriphone.io/) - 通过免费、快速、可靠的 JSON API 进行全球电话号码验证。/月 1000 个请求
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="payment-and-billing-integration"></a>
 ## 支付和账单集成
@@ -1584,7 +1585,7 @@
   * [RevenueCat](https://www.revenuecat.com/) - 用于应用内购买和订阅的托管后端(iOS 和 Android)。免费跟踪收入高达 2500 美元/月。
   * [vatlayer](https://vatlayer.com/) - 即时增值税号验证和欧盟增值税税率 API，/月免费 100 个 API 请求
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="docker-related"></a>
 ## Docker 相关
@@ -1595,7 +1596,7 @@
   * [quay.io](https://quay.io/) - 使用无限的免费公共存储库构建和存储容器映像
   * [ttl.sh](https://ttl.sh/) - 匿名和临时 Docker 镜像注册表
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="dev-blogging-sites"></a>
 ## 开发者博客平台
@@ -1607,7 +1608,7 @@
   * [Medium](https://medium.com/) - 更加仔细地考虑对您来说重要的事情。
   * [JustBlogged](https://justblogged.com) - 免费博客平台，具有自定义域支持和快速的全球性能。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="commenting-platforms"></a>
 ## 评论平台
@@ -1617,7 +1618,7 @@
   * [Remarkbox](https://www.remarkbox.com/) - 开源托管评论平台，尽你所能支付“几个域的一位版主，完全控制行为和外观”
   * [Utterances](https://utteranc.es/) - 一个基于 GitHub 问题构建的轻量级评论小部件。使用 GitHub 问题进行博客评论、Wiki 页面等！
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="screenshot-apis"></a>
 ## 截图 API
@@ -1632,7 +1633,7 @@
   * [SnapAPI](https://snapapi.pics) - 屏幕截图、视频录制、PDF 生成和 Web 数据提取 API。免费计划包括/月 200 张屏幕截图。
   * [thumbnail.ws](https://thumbnail.ws) - 用于生成网站缩略图的 API。/月免费 1,000 个请求。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="flutter-related-and-building-ios-apps-without-mac"></a>
 ## Flutter 相关和无需 Mac 构建 iOS 应用
@@ -1641,7 +1642,7 @@
   * [FlutLab](https://flutlab.io/) - FlutLab 是一个现代 Flutter 在线 IDE，也是创建、调试和构建跨平台项目的最佳场所。使用 Flutter 构建 iOS(无需 Mac)和 Android 应用程序。
   * [FlutterFlow](https://flutterflow.io/) -  FlutterFlow 是一个基于浏览器的拖放界面，用于使用 flutter 构建移动应用程序。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="privacy-management"></a>
 ## 隐私管理
@@ -1652,7 +1653,7 @@
   * [Iubenda](https://www.iubenda.com/) - 隐私和 cookie 政策以及同意管理。免费套餐提供有限的隐私和 Cookie 政策以及 Cookie 横幅。
   * [Ketch](https://www.ketch.com/) - 同意管理和隐私框架工具。免费套餐提供大多数功能，但访问者数量有限。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="miscellaneous"></a>
 ## 杂项
@@ -1683,7 +1684,7 @@
   * [UUID Generator](https://newuuid.com/) - 立即生成企业级 UUID v1、UUID v4、UUID v7、GUID、Nil UUID、CUID v1/v2、NanoID 和 ULID
   * [Versionfeeds](https://versionfeeds.com) - 用于发布您喜爱的软件的自定义 RSS 源。将您的编程语言、库或喜爱的工具的最新版本集中在一个源中。 (前3次免费)
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="remote-desktop-tools"></a>
 ## 远程桌面工具
@@ -1693,7 +1694,7 @@
   * [RemSupp](https://remsupp.com) - 按需支持和永久访问设备(免费/天 2 次会议)
   * [RustDesk](https://rustdesk.com/) - 适合所有人的开源虚拟/远程桌面基础设施！
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
 
 <a id="other-free-resources"></a>
 ## 其他免费资源
@@ -1710,4 +1711,4 @@
   * [SimpleRestore](https://simplerestore.io) - 轻松恢复 MySQL 备份。将 MySQL 备份恢复到任何远程数据库，无需代码或服务器。
   * [SnapShooter](https://snapshooter.com/) - 适用于 DigitalOcean、AWS、LightSail、Hetzner 和 Exoscale 的备份解决方案，支持将数据库、文件系统和应用程序直接备份到基于 s3 的存储。提供免费计划，其中包含一项资源的每日备份。
 
-**[⬆️ 返回顶部](#目录)**
+**[⬆️ 返回顶部](#table-of-contents)**
