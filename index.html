@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -28,6 +28,9 @@
     <meta name="twitter:image" content="https://raw.githubusercontent.com/ripienaar/free-for-dev/master/logo.webp">
 
     <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" title="docsify-darklight-theme" type="text/css">
 
@@ -53,13 +56,21 @@
     <script>
       window.$docsify = {
         name: "开发者免费资源",
-        repo: "ripienaar/free-for-dev",
-        search: ["/"],
+        repo: "xzulab/free-for-dev",
+        auto2top: true,
+        maxLevel: 3,
+        subMaxLevel: 2,
+        search: {
+          paths: "auto",
+          placeholder: "搜索服务、分类或关键词",
+          noData: "没有找到匹配结果",
+          depth: 3
+        },
         darklightTheme: {
-          siteFont : "Source Sans Pro, Helvetica Neue",
+          siteFont : "Noto Sans SC, Source Sans Pro, Helvetica Neue",
           defaultTheme : "light",
           codeFontFamily : "Roboto Mono, Monaco, courier, monospace",
-          bodyFontSize: "15px"
+          bodyFontSize: "16px"
         }
       }
     </script>
@@ -69,8 +80,236 @@
     <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js" type="text/javascript"></script>
 
     <style>
+      :root {
+        --theme-color: #2563eb;
+        --docsifytabs-border-color: #dbe3ef;
+        --docsifytabs-tab-highlight-color: #2563eb;
+        --surface: #ffffff;
+        --surface-muted: #f8fafc;
+        --line: #dbe3ef;
+        --line-strong: #cbd5e1;
+        --text: #1e293b;
+        --text-muted: #64748b;
+        --link: #2563eb;
+        --link-hover: #1d4ed8;
+      }
+
+      html {
+        background: var(--surface-muted);
+        scroll-behavior: smooth;
+      }
+
+      body {
+        color: var(--text);
+        background:
+          linear-gradient(180deg, rgba(248, 250, 252, 0.95), rgba(248, 250, 252, 1) 360px),
+          var(--surface-muted);
+        font-family: "Noto Sans SC", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+        letter-spacing: 0;
+      }
+
+      .app-name-link img {
+        max-width: 112px;
+      }
+
+      .sidebar {
+        width: 304px;
+        border-right: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.96);
+      }
+
+      .sidebar-toggle {
+        background-color: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        left: 16px;
+        bottom: 16px;
+        padding: 9px;
+      }
+
+      .sidebar-toggle span {
+        background-color: var(--text);
+      }
+
+      .sidebar ul li a {
+        color: var(--text-muted);
+        line-height: 1.55;
+        transition: color 180ms ease, background-color 180ms ease;
+      }
+
+      .sidebar ul li.active > a,
+      .sidebar ul li a:hover {
+        color: var(--link);
+        font-weight: 600;
+      }
+
+      .search {
+        border-bottom: 1px solid var(--line);
+        margin: 0;
+        padding: 16px;
+      }
+
+      .search input {
+        height: 42px;
+        border: 1px solid var(--line-strong);
+        border-radius: 8px;
+        background: var(--surface);
+        color: var(--text);
+        font-size: 14px;
+        padding: 0 12px;
+        transition: border-color 180ms ease, box-shadow 180ms ease;
+      }
+
+      .search input:focus {
+        border-color: var(--link);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+      }
+
+      .search .matching-post {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .content {
+        left: 304px;
+        padding-top: 0;
+      }
+
+      .markdown-section {
+        max-width: 1120px;
+        padding: 48px 40px 72px;
+        color: var(--text);
+        line-height: 1.78;
+      }
+
+      .markdown-section h1,
+      .markdown-section h2,
+      .markdown-section h3 {
+        color: #0f172a;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+
+      .markdown-section h1 {
+        margin-bottom: 18px;
+        font-size: 34px;
+        line-height: 1.25;
+      }
+
+      .markdown-section h2 {
+        margin-top: 48px;
+        padding-top: 10px;
+        border-top: 1px solid var(--line);
+        font-size: 25px;
+      }
+
+      .markdown-section h3 {
+        font-size: 19px;
+      }
+
+      .markdown-section p,
+      .markdown-section li {
+        color: var(--text);
+      }
+
+      .markdown-section a {
+        color: var(--link);
+        font-weight: 500;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        transition: color 180ms ease, background-color 180ms ease;
+      }
+
+      .markdown-section a:hover {
+        color: var(--link-hover);
+      }
+
+      .markdown-section blockquote {
+        margin: 24px 0;
+        border-left: 4px solid var(--link);
+        background: #eff6ff;
+        color: #1e3a8a;
+        padding: 14px 18px;
+      }
+
       blockquote:first-of-type {
-        background-color: rgba(235, 248, 242, 0.363);
+        background-color: #eff6ff;
+      }
+
+      .markdown-section table {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .markdown-section th {
+        background: #f1f5f9;
+        color: #0f172a;
+        font-weight: 700;
+      }
+
+      .markdown-section td,
+      .markdown-section th {
+        border-color: var(--line);
+        padding: 10px 12px;
+      }
+
+      .markdown-section code {
+        border-radius: 5px;
+        background: #eef2f7;
+        color: #0f172a;
+        font-size: 0.92em;
+        padding: 2px 5px;
+      }
+
+      .markdown-section pre {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #0f172a;
+      }
+
+      .markdown-section pre code {
+        background: transparent;
+        color: #e2e8f0;
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      .sidebar-toggle:focus-visible {
+        outline: 3px solid rgba(37, 99, 235, 0.35);
+        outline-offset: 2px;
+      }
+
+      @media (max-width: 768px) {
+        .content {
+          left: 0;
+        }
+
+        .markdown-section {
+          padding: 32px 20px 56px;
+        }
+
+        .markdown-section h1 {
+          font-size: 28px;
+        }
+
+        .markdown-section h2 {
+          font-size: 22px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
       }
     </style>
   </body>
