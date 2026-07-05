@@ -15,7 +15,7 @@
     <meta itemprop="image" content="https://raw.githubusercontent.com/ripienaar/free-for-dev/master/logo.webp">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://free-for.dev">
+    <meta property="og:url" content="https://xzulab.github.io/free-for-dev-zh/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="开发者免费资源">
     <meta property="og:description" content="开发者和开源作者现在可以使用大量提供免费套餐的服务，但要全部找到并据此做出明智选择并不容易。">
@@ -30,7 +30,7 @@
     <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" title="docsify-darklight-theme" type="text/css">
 
@@ -56,7 +56,7 @@
     <script>
       window.$docsify = {
         name: "开发者免费资源",
-        repo: "xzulab/free-for-dev",
+        repo: "xzulab/free-for-dev-zh",
         auto2top: true,
         maxLevel: 3,
         subMaxLevel: 2,
@@ -67,9 +67,9 @@
           depth: 3
         },
         darklightTheme: {
-          siteFont : "Noto Sans SC, Source Sans Pro, Helvetica Neue",
-          defaultTheme : "light",
-          codeFontFamily : "Roboto Mono, Monaco, courier, monospace",
+          siteFont : "IBM Plex Sans, Noto Sans SC, Source Sans Pro, Helvetica Neue",
+          defaultTheme : "dark",
+          codeFontFamily : "JetBrains Mono, Roboto Mono, Monaco, courier, monospace",
           bodyFontSize: "16px"
         }
       }
@@ -81,125 +81,233 @@
 
     <style>
       :root {
-        --theme-color: #2563eb;
-        --docsifytabs-border-color: #dbe3ef;
-        --docsifytabs-tab-highlight-color: #2563eb;
-        --surface: #ffffff;
-        --surface-muted: #f8fafc;
-        --line: #dbe3ef;
-        --line-strong: #cbd5e1;
-        --text: #1e293b;
-        --text-muted: #64748b;
-        --link: #2563eb;
-        --link-hover: #1d4ed8;
+        --theme-color: #28f7a1;
+        --docsifytabs-border-color: rgba(88, 166, 255, 0.28);
+        --docsifytabs-tab-highlight-color: #28f7a1;
+        --bg: #050812;
+        --panel: rgba(12, 18, 32, 0.78);
+        --panel-strong: rgba(15, 23, 42, 0.92);
+        --panel-hot: rgba(40, 247, 161, 0.12);
+        --line: rgba(148, 163, 184, 0.18);
+        --line-strong: rgba(40, 247, 161, 0.42);
+        --text: #e7f0ff;
+        --text-strong: #ffffff;
+        --text-muted: #91a3bd;
+        --cyan: #2dd4ff;
+        --green: #28f7a1;
+        --magenta: #ff4ecd;
+        --amber: #f8d66d;
+        --link: #67e8f9;
+        --link-hover: #28f7a1;
+        --shadow-green: 0 0 32px rgba(40, 247, 161, 0.18);
+        color-scheme: dark;
       }
 
       html {
-        background: var(--surface-muted);
+        background: var(--bg);
         scroll-behavior: smooth;
       }
 
       body {
         color: var(--text);
         background:
-          linear-gradient(180deg, rgba(248, 250, 252, 0.95), rgba(248, 250, 252, 1) 360px),
-          var(--surface-muted);
-        font-family: "Noto Sans SC", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+          radial-gradient(circle at 18% 8%, rgba(45, 212, 255, 0.18), transparent 28rem),
+          radial-gradient(circle at 82% 18%, rgba(255, 78, 205, 0.12), transparent 24rem),
+          linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+          linear-gradient(180deg, #070b16 0%, #050812 48%, #03050b 100%);
+        background-attachment: fixed;
+        background-size: auto, auto, 36px 36px, 36px 36px, auto;
+        font-family: "IBM Plex Sans", "Noto Sans SC", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
         letter-spacing: 0;
       }
 
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        content: "";
+        background:
+          linear-gradient(115deg, transparent 0 18%, rgba(40, 247, 161, 0.08) 18.2% 18.6%, transparent 18.8% 100%),
+          linear-gradient(245deg, transparent 0 72%, rgba(45, 212, 255, 0.08) 72.2% 72.7%, transparent 72.9% 100%);
+      }
+
       .app-name-link img {
-        max-width: 112px;
+        max-width: 116px;
+        filter: drop-shadow(0 0 18px rgba(40, 247, 161, 0.24));
       }
 
       .sidebar {
-        width: 304px;
+        position: fixed;
+        width: 318px;
         border-right: 1px solid var(--line);
-        background: rgba(255, 255, 255, 0.96);
+        background: linear-gradient(180deg, rgba(8, 13, 26, 0.94), rgba(6, 10, 21, 0.88));
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        box-shadow: 12px 0 42px rgba(0, 0, 0, 0.28);
+      }
+
+      .sidebar::after {
+        position: absolute;
+        top: 0;
+        right: -1px;
+        bottom: 0;
+        width: 1px;
+        content: "";
+        background: linear-gradient(180deg, transparent, var(--green), var(--cyan), transparent);
+        opacity: 0.6;
+      }
+
+      .sidebar h1 {
+        font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+        letter-spacing: 0;
+      }
+
+      .sidebar .app-name {
+        margin: 24px 0 14px;
+      }
+
+      .sidebar .app-name-link {
+        color: var(--text-strong);
+        text-shadow: 0 0 20px rgba(40, 247, 161, 0.28);
       }
 
       .sidebar-toggle {
-        background-color: rgba(255, 255, 255, 0.92);
-        border: 1px solid var(--line);
-        border-radius: 6px;
+        background-color: rgba(5, 8, 18, 0.9);
+        border: 1px solid var(--line-strong);
+        border-radius: 2px;
         left: 16px;
         bottom: 16px;
         padding: 9px;
+        box-shadow: var(--shadow-green);
       }
 
       .sidebar-toggle span {
-        background-color: var(--text);
+        background-color: var(--green);
       }
 
       .sidebar ul li a {
         color: var(--text-muted);
         line-height: 1.55;
-        transition: color 180ms ease, background-color 180ms ease;
+        border-radius: 4px;
+        transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
       }
 
       .sidebar ul li.active > a,
       .sidebar ul li a:hover {
         color: var(--link);
         font-weight: 600;
+        background: rgba(45, 212, 255, 0.08);
       }
 
       .search {
         border-bottom: 1px solid var(--line);
         margin: 0;
-        padding: 16px;
+        padding: 18px 16px;
+        background: linear-gradient(180deg, rgba(45, 212, 255, 0.07), transparent);
       }
 
       .search input {
-        height: 42px;
-        border: 1px solid var(--line-strong);
-        border-radius: 8px;
-        background: var(--surface);
+        height: 44px;
+        border: 1px solid rgba(45, 212, 255, 0.34);
+        border-radius: 3px;
+        background: rgba(5, 8, 18, 0.76);
         color: var(--text);
-        font-size: 14px;
+        font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+        font-size: 13px;
         padding: 0 12px;
         transition: border-color 180ms ease, box-shadow 180ms ease;
       }
 
+      .search input::placeholder {
+        color: #71829c;
+      }
+
       .search input:focus {
-        border-color: var(--link);
-        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+        border-color: var(--green);
+        box-shadow: 0 0 0 3px rgba(40, 247, 161, 0.14), 0 0 26px rgba(45, 212, 255, 0.14);
       }
 
       .search .matching-post {
         border-bottom: 1px solid var(--line);
       }
 
+      .search .matching-post a {
+        color: var(--text);
+      }
+
+      .search .matching-post p {
+        color: var(--text-muted);
+      }
+
+      .results-panel,
+      .search .results-panel {
+        background: rgba(6, 10, 21, 0.96);
+      }
+
+      .github-corner svg {
+        color: var(--bg);
+        fill: var(--green);
+        filter: drop-shadow(0 0 18px rgba(40, 247, 161, 0.3));
+      }
+
       .content {
-        left: 304px;
+        left: 318px;
         padding-top: 0;
       }
 
       .markdown-section {
-        max-width: 1120px;
-        padding: 48px 40px 72px;
+        max-width: 1160px;
+        padding: 56px 44px 80px;
         color: var(--text);
         line-height: 1.78;
+      }
+
+      .markdown-section hr {
+        border: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(45, 212, 255, 0.55), transparent);
       }
 
       .markdown-section h1,
       .markdown-section h2,
       .markdown-section h3 {
-        color: #0f172a;
+        color: var(--text-strong);
         font-weight: 700;
         letter-spacing: 0;
       }
 
       .markdown-section h1 {
-        margin-bottom: 18px;
-        font-size: 34px;
-        line-height: 1.25;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 22px;
+        font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+        font-size: 40px;
+        line-height: 1.16;
+        text-shadow: 0 0 28px rgba(45, 212, 255, 0.22);
+      }
+
+      .markdown-section h1::after {
+        display: block;
+        width: 72%;
+        height: 3px;
+        margin-top: 14px;
+        content: "";
+        background: linear-gradient(90deg, var(--green), var(--cyan), var(--magenta));
+        box-shadow: 0 0 26px rgba(40, 247, 161, 0.24);
       }
 
       .markdown-section h2 {
-        margin-top: 48px;
-        padding-top: 10px;
-        border-top: 1px solid var(--line);
+        position: relative;
+        margin-top: 54px;
+        padding: 16px 18px;
+        border: 1px solid var(--line);
+        border-left: 3px solid var(--green);
+        background: linear-gradient(90deg, rgba(40, 247, 161, 0.1), rgba(45, 212, 255, 0.045), transparent);
+        font-family: "JetBrains Mono", "Noto Sans SC", monospace;
         font-size: 25px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
       }
 
       .markdown-section h3 {
@@ -209,6 +317,24 @@
       .markdown-section p,
       .markdown-section li {
         color: var(--text);
+      }
+
+      .markdown-section ul {
+        padding-left: 1.35rem;
+      }
+
+      .markdown-section li::marker {
+        color: var(--green);
+      }
+
+      .markdown-section > ul > li {
+        margin: 7px 0;
+      }
+
+      .markdown-section > p:first-of-type {
+        max-width: 780px;
+        color: #bfd0e8;
+        font-size: 18px;
       }
 
       .markdown-section a {
@@ -221,18 +347,23 @@
 
       .markdown-section a:hover {
         color: var(--link-hover);
+        text-shadow: 0 0 12px rgba(40, 247, 161, 0.28);
       }
 
       .markdown-section blockquote {
-        margin: 24px 0;
-        border-left: 4px solid var(--link);
-        background: #eff6ff;
-        color: #1e3a8a;
-        padding: 14px 18px;
+        margin: 26px 0;
+        border: 1px solid rgba(40, 247, 161, 0.32);
+        border-left: 4px solid var(--green);
+        background: linear-gradient(135deg, rgba(40, 247, 161, 0.12), rgba(45, 212, 255, 0.06));
+        color: #d8fff0;
+        padding: 16px 18px;
+        box-shadow: var(--shadow-green);
       }
 
       blockquote:first-of-type {
-        background-color: #eff6ff;
+        background:
+          linear-gradient(135deg, rgba(40, 247, 161, 0.16), rgba(45, 212, 255, 0.08)),
+          rgba(5, 8, 18, 0.7);
       }
 
       .markdown-section table {
@@ -241,12 +372,13 @@
         border-collapse: collapse;
         overflow: hidden;
         border: 1px solid var(--line);
-        border-radius: 8px;
+        border-radius: 4px;
+        background: var(--panel);
       }
 
       .markdown-section th {
-        background: #f1f5f9;
-        color: #0f172a;
+        background: rgba(45, 212, 255, 0.1);
+        color: var(--text-strong);
         font-weight: 700;
       }
 
@@ -257,17 +389,20 @@
       }
 
       .markdown-section code {
-        border-radius: 5px;
-        background: #eef2f7;
-        color: #0f172a;
+        border: 1px solid rgba(40, 247, 161, 0.2);
+        border-radius: 3px;
+        background: rgba(40, 247, 161, 0.1);
+        color: #adffd9;
+        font-family: "JetBrains Mono", "Noto Sans SC", monospace;
         font-size: 0.92em;
         padding: 2px 5px;
       }
 
       .markdown-section pre {
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #0f172a;
+        border: 1px solid rgba(45, 212, 255, 0.22);
+        border-radius: 4px;
+        background: rgba(2, 6, 16, 0.92);
+        box-shadow: inset 0 0 0 1px rgba(40, 247, 161, 0.06);
       }
 
       .markdown-section pre code {
@@ -279,7 +414,7 @@
       button:focus-visible,
       input:focus-visible,
       .sidebar-toggle:focus-visible {
-        outline: 3px solid rgba(37, 99, 235, 0.35);
+        outline: 3px solid rgba(40, 247, 161, 0.38);
         outline-offset: 2px;
       }
 
@@ -289,15 +424,16 @@
         }
 
         .markdown-section {
-          padding: 32px 20px 56px;
+          padding: 34px 20px 58px;
         }
 
         .markdown-section h1 {
-          font-size: 28px;
+          font-size: 30px;
         }
 
         .markdown-section h2 {
           font-size: 22px;
+          padding: 14px 15px;
         }
       }
 
