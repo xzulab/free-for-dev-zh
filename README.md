@@ -1,5 +1,7 @@
 # free-for.dev
 
+> 中文版整理自 [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev)，用于中文读者浏览开发者免费资源。
+
 开发人员和开源作者现在有许多提供免费套餐的服务，但找到所有这些服务需要时间才能做出明智的决定。
 
 这是具有免费开发者级别的软件(SaaS、PaaS、IaaS 等)和其他产品的列表。
