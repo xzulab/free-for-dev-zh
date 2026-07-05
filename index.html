@@ -626,19 +626,23 @@
       }
 
       @media (max-width: 768px) {
-        body {
-          background:
-            radial-gradient(circle at 20% 0%, rgba(45, 212, 255, 0.14), transparent 17rem),
-            radial-gradient(circle at 90% 12%, rgba(255, 78, 205, 0.09), transparent 15rem),
-            linear-gradient(rgba(148, 163, 184, 0.045) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(148, 163, 184, 0.045) 1px, transparent 1px),
-            linear-gradient(180deg, #070b16 0%, #050812 58%, #03050b 100%);
-          background-attachment: scroll;
-          background-size: auto, auto, 28px 28px, 28px 28px, auto;
+        :root {
+          --text: #edf5ff;
+          --text-muted: #a9b7cb;
+          --line: rgba(148, 163, 184, 0.16);
         }
 
+        body {
+          background:
+            radial-gradient(circle at 50% -8%, rgba(40, 247, 161, 0.12), transparent 15rem),
+            linear-gradient(180deg, #080d18 0%, #050812 42%, #040711 100%);
+          background-attachment: scroll;
+          background-size: auto;
+        }
+
+        body::before,
         body::after {
-          opacity: 0.22;
+          display: none;
         }
 
         .boot-screen {
@@ -651,17 +655,23 @@
         }
 
         .sidebar {
-          width: min(88vw, 320px);
-          max-width: 320px;
-          box-shadow: 18px 0 54px rgba(0, 0, 0, 0.46);
+          width: min(82vw, 300px);
+          max-width: 300px;
+          background: rgba(7, 11, 22, 0.98);
+          box-shadow: 18px 0 42px rgba(0, 0, 0, 0.55);
+        }
+
+        .sidebar::after {
+          opacity: 0.35;
         }
 
         .sidebar .app-name {
-          margin: 18px 0 10px;
+          margin: 16px 0 8px;
         }
 
         .app-name-link img {
-          max-width: 92px;
+          max-width: 82px;
+          filter: none;
         }
 
         .sidebar-nav {
@@ -669,22 +679,35 @@
         }
 
         .sidebar ul li a {
-          min-height: 38px;
+          min-height: 42px;
           display: flex;
           align-items: center;
-          margin-right: 4px;
-          padding-top: 6px;
-          padding-bottom: 6px;
+          margin-right: 6px;
+          padding: 7px 9px;
           font-size: 14px;
-          line-height: 1.35;
+          line-height: 1.3;
+          border-radius: 8px;
+          background: transparent;
+        }
+
+        .sidebar ul li a:hover {
+          transform: none;
+        }
+
+        .sidebar ul li.active > a {
+          background: rgba(40, 247, 161, 0.1);
         }
 
         .search {
-          padding: 12px;
+          padding: 12px 12px 10px;
+          background: rgba(7, 11, 22, 0.92);
         }
 
         .search input {
           min-height: 44px;
+          border-radius: 10px;
+          border-color: rgba(148, 163, 184, 0.26);
+          background: rgba(255, 255, 255, 0.045);
           font-size: 13px;
         }
 
@@ -698,41 +721,53 @@
         .markdown-section {
           width: 100%;
           max-width: 100vw;
-          padding: 30px 16px 58px;
-          line-height: 1.68;
+          padding: 24px 18px 64px;
+          line-height: 1.72;
           overflow-wrap: anywhere;
           word-break: normal;
         }
 
         .markdown-section::before {
-          max-width: 100%;
-          white-space: normal;
-          margin-bottom: 14px;
-          padding: 5px 8px;
-          font-size: 10px;
-          letter-spacing: 0.09em;
+          margin-bottom: 12px;
+          padding: 0;
+          border: 0;
+          background: transparent;
+          box-shadow: none;
+          color: var(--green);
+          content: "FREE-FOR-DEV / ZH";
+          font-size: 11px;
+          letter-spacing: 0.12em;
         }
 
         .markdown-section h1 {
           display: block;
           max-width: 100%;
-          margin-bottom: 18px;
-          font-size: 28px;
+          margin: 0 0 16px;
+          font-family: "IBM Plex Sans", "Noto Sans SC", sans-serif;
+          font-size: 30px;
           line-height: 1.2;
           overflow-wrap: anywhere;
+          text-shadow: none;
         }
 
         .markdown-section h1::after {
-          width: 100%;
+          width: 58px;
           height: 2px;
-          margin-top: 12px;
+          margin-top: 14px;
+          background: var(--green);
+          box-shadow: none;
         }
 
         .markdown-section h2 {
-          margin-top: 38px;
-          padding: 12px 12px;
-          font-size: 20px;
-          line-height: 1.35;
+          margin: 34px 0 12px;
+          padding: 0 0 10px;
+          border: 0;
+          border-bottom: 1px solid var(--line);
+          background: transparent;
+          box-shadow: none;
+          font-family: "IBM Plex Sans", "Noto Sans SC", sans-serif;
+          font-size: 21px;
+          line-height: 1.32;
         }
 
         .markdown-section h2::after {
@@ -743,8 +778,14 @@
           font-size: 17px;
         }
 
+        .markdown-section p,
+        .markdown-section li {
+          color: #dbe7f7;
+        }
+
         .markdown-section > p:first-of-type {
           font-size: 16px;
+          color: #b7c8df;
         }
 
         .markdown-section ul {
@@ -757,24 +798,44 @@
 
         .markdown-section h2 + ul > li,
         .markdown-section h2 + p + ul > li {
-          margin: 8px 0;
-          padding: 10px 10px;
-          border-left-width: 2px;
+          margin: 7px 0;
+          padding: 0;
+          border: 0;
+          background: transparent;
+          box-shadow: none;
           transform: none;
         }
 
         .markdown-section h2 + ul > li:hover,
         .markdown-section h2 + p + ul > li:hover {
+          border: 0;
+          background: transparent;
+          box-shadow: none;
           transform: none;
         }
 
+        .markdown-section h2 + ul > li::marker,
+        .markdown-section h2 + p + ul > li::marker {
+          content: initial;
+        }
+
         .markdown-section a {
+          color: #7dd3fc;
           overflow-wrap: anywhere;
+          text-shadow: none;
         }
 
         .markdown-section blockquote {
-          margin: 20px 0;
-          padding: 13px 14px;
+          margin: 18px 0;
+          padding: 12px 14px;
+          border: 0;
+          border-left: 3px solid var(--green);
+          background: rgba(40, 247, 161, 0.075);
+          box-shadow: none;
+        }
+
+        .markdown-section blockquote::before {
+          display: none;
         }
 
         .markdown-section table {
@@ -792,6 +853,8 @@
         }
 
         .markdown-section code {
+          border: 0;
+          background: rgba(125, 211, 252, 0.11);
           word-break: break-word;
         }
 
@@ -811,22 +874,22 @@
 
       @media (max-width: 420px) {
         .markdown-section {
-          padding-left: 14px;
-          padding-right: 14px;
+          padding-left: 16px;
+          padding-right: 16px;
         }
 
         .markdown-section h1 {
-          font-size: 26px;
+          font-size: 28px;
         }
 
         .markdown-section h2 {
-          font-size: 19px;
+          font-size: 20px;
         }
 
         .markdown-section h2 + ul > li,
         .markdown-section h2 + p + ul > li {
-          margin-left: -2px;
-          margin-right: -2px;
+          margin-left: 0;
+          margin-right: 0;
         }
       }
 
