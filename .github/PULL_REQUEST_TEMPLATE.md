@@ -1,53 +1,53 @@
 <!--
- ### Free SaaS Offering Submission
+ ### 免费 SaaS 产品提交
 
- Thank you for contributing to this list. This list is for **SaaS**
- services that offer a **free tier** to help developers evaluate and
- build something that users can later use and get support for.
+ 感谢您对此列表的贡献。此列表适用于 **SaaS**
+ 提供**免费套餐**的服务，以帮助开发人员评估和
+ 构建用户以后可以使用并获得支持的东西。
 
- The focus of this list is quite broad but we try to keep things
- limited to that which infrastructure developers, like DevOps Practitioners,
- would find useful.
+ 该列表的重点相当广泛，但我们尽力保留内容
+ 仅限于基础设施开发人员(例如 DevOps 从业者)
+ 会发现有用的。
 
- This list is the result of more than a thousand people contributing
- to make something useful, we appreciate your efforts.
+ 该列表是一千多人贡献的结果
+ 为了做出有用的东西，我们感谢您的努力。
 
- ### Code of Conduct
+ ### 行为准则
 
- We do not accept Pull Requests for additions that do not use this template.
- If you open a Pull Request that was written using AI or does not use this
- form we will close it without reviewing it or discussing it.
+ 我们不接受不使用此模板的添加请求。
+ 如果您打开使用 AI 编写的 Pull 请求或不使用该请求
+ 我们将关闭它，而不对其进行审查或讨论。
 
- We are not here to argue with you. If you are argumentative, abusive,
- lie or misrepresent your service or are otherwise anti-social we will
- block you.
+ 我们不是来和你争论的。如果你爱争论、辱骂、
+ 撒谎或歪曲您的服务或以其他方式反社会，我们将
+ 阻止你。
 
- ### Services we do not accept
+ ### 我们不接受的服务
 
-   * cPanel like PHP + MySQL hosting services.
-   * Free dns services that are generic frontends to CloudFlare or similar
-   * Services that are verbatim copy pastes of others while adding no value
-   * Fake / Temporary / Ephemeral email generators, we have enough of those
-   * Generic developer "toolbox" sites - format converters, calculators etc,
-     we have too many already and more will not add value
+   * cPanel 类似 PHP + MySQL 的托管服务。
+   * 免费 dns 服务，是 CloudFlare 或类似服务的通用前端
+   * 逐字复制粘贴他人的服务，但没有增加任何价值
+   * 假的/临时的/短暂的电子邮件生成器，我们已经够多了
+   * 通用开发者“工具箱”网站 - 格式转换器、计算器等，
+     我们已经有太多了，更多不会增加价值
 -->
 
-## Requirements
+<a id="requirements"></a>
+## 要求
 
-<!-- This is only for new submissions -->
-<!-- Please ensure your submission ticks all of the requirements -->
+<!-- 这仅适用于新提交的内容 -->
+<!-- 请确保您提交的内容符合所有要求 -->
 
- * [ ] This is Software as a Service not self hosted
- * [ ] It has a free tier not just a free trial
- * [ ] Pricing information is clearly visible without signup or phone calls
- * [ ] The submission mentions what is free
- * [ ] The submission is not already present in the list
- * [ ] The service has contact details of those running it and a privacy policy
+ * [ ] 这是非自托管的软件即服务
+ * [ ] 它有免费套餐，而不仅仅是免费试用
+ * [ ] 定价信息清晰可见，无需注册或打电话
+ * [ ] 提交内容提到了免费的内容
+ * [ ] 提交内容尚未出现在列表中
+ * [ ] 该服务包含运行该服务的人员的联系方式以及隐私政策
 
 <!--
- Contributing here is very easy, but does require attention to details.
- We do not accept LLM written submissions.
+ 在这里做出贡献非常容易，但确实需要注意细节。
+ 我们不接受 LLM 编写的提交。
 -->
 
- * [ ] Large Language Models and other AI tick this box
-
+ * [ ] 大语言模型和其他人工智能勾选此框

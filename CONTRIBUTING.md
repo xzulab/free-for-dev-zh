@@ -1,49 +1,52 @@
-# Free SaaS Offering Submission
+# 免费 SaaS 服务提交
 
-Thank you for contributing to this list. This list is for **SaaS**
-services that offer a **free tier** to help developers evaluate and
-build something that users can later use and get support for.
+感谢您对此列表的贡献。此列表适用于 **SaaS**
+提供**免费套餐**的服务，以帮助开发人员评估和
+构建用户以后可以使用并获得支持的东西。
 
-The focus of this list is quite broad but we try to keep things
-limited to that which infrastructure developers, like DevOps Practitioners,
-would find useful.
+该列表的重点相当广泛，但我们尽力保留内容
+仅限于基础设施开发人员(例如 DevOps 从业者)
+会发现有用的。
 
-This list is the result of more than a thousand people contributing
-to make something useful, we appreciate your efforts.
+该列表是一千多人贡献的结果
+为了做出有用的东西，我们感谢您的努力。
 
-# Contributing
+# 贡献指南
 
-## Services we do not accept
+<a id="services-we-do-not-accept"></a>
+## 我们不接受的服务
 
- * cPanel like PHP + MySQL hosting services.
- * Free dns services that are generic frontends to CloudFlare or similar
- * Services that are verbatim copy pastes of others while adding no value
- * Fake / Temporary / Ephemeral email generators, we have enough of those
- * Generic developer "toolbox" sites - format converters, calculators etc,
-   we have too many already and more will not add value
+ * cPanel 类似 PHP + MySQL 的托管服务。
+ * 免费 dns 服务，是 CloudFlare 或类似服务的通用前端
+ * 逐字复制粘贴他人的服务，但没有增加任何价值
+ * 假的/临时的/短暂的电子邮件生成器，我们已经够多了
+ * 通用开发者“工具箱”网站 - 格式转换器、计算器等，
+   我们已经有太多了，更多不会增加价值
 
-## New Submission
+<a id="new-submission"></a>
+## 新增提交
 
-Review which services we do and do not accept above.
+查看上面我们接受和不接受哪些服务。
 
-Open a Pull Request and fill in the PR template. New submissions that
-do not follow the PR template guidance and tick all the boxes, or simply
-do not use the template at all will be closed without discussion.
+打开 Pull Request 并填写 PR 模板。新提交的内容
+不要遵循 PR 模板指南并勾选所有框，或者简单地
+根本不使用该模板将不经讨论而关闭。
 
-## Updating an existing submission
+<a id="updating-an-existing-submission"></a>
+## 更新现有条目
 
-Open a Pull Request and make the edit you wish to make, you do not need
-to follow the guidance in the template or tick any boxes.  But, still, we
-do not accept AI generated edits and if it is clear that it was done with AI
-we will close it without discussion.
+打开 Pull Request 并进行您想要进行的编辑，您不需要
+遵循模板中的指导或勾选任何框。  但是，我们仍然
+不接受人工智能生成的编辑，并且如果很明显它是由人工智能完成的
+我们将不经讨论就关闭它。
 
-# Code of Conduct
+# 行为准则
 
-We do not accept Pull Requests for additions that do not use this template.
-If you open a Pull Request that was written using AI or does not use this
-form we will close it without reviewing it or discussing it.
+我们不接受不使用此模板的添加请求。
+如果您打开使用 AI 编写的 Pull 请求或不使用该请求
+我们将关闭它，而不对其进行审查或讨论。
 
-We are not here to argue with you. If you are argumentative, abusive,
-lie or misrepresent your service or are otherwise anti-social we will
-block you.
+我们不是来和你争论的。如果你爱争论、辱骂、
+撒谎或歪曲您的服务或以其他方式反社会，我们将
+阻止你。
 

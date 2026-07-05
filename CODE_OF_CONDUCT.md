@@ -1,8 +1,8 @@
- ### Code of Conduct
+ ### 行为准则
 
- We do not accept contributions written by AI, such contributions will
- be closed without discussion or review.
+ 我们不接受人工智能撰写的贡献，此类贡献将
+ 未经讨论或审查而关闭。
 
- We are not here to argue with you. If you are argumentative, abusive,
- lie or misrepresent your service or are otherwise anti-social we will
- block you.
+ 我们不是来和你争论的。如果你爱争论、辱骂、
+ 撒谎或歪曲您的服务或以其他方式反社会，我们将
+ 阻止你。
